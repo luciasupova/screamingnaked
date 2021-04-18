@@ -340,4 +340,15 @@ h3:nth-child(3) {
     opacity: 0.25;
   }
 }
+
+h4 {
+    position: absolute;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+    margin-left: 32.2em;
+    margin-top: 5em;
+    padding: 2em;
+    font-weight: lighter;
+    font-size: 20px;
+}
 }

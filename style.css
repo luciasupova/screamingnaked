@@ -137,3 +137,15 @@ justify-content: center;
 margin-left: 1em;
 margin-right: 1em;
 }
+
+@media only screen and (min-width:1279px) {
+    .cover__img {
+        width: 550px;
+        margin-top: 2em;
+    }
+
+    .video__bg-whole {
+        width: 800px;
+
+    }
+}

@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="The Landing Page that contains a new official video and a song Cube of Shame made by Screaming Naked">
+    <meta name="keywords" content="Screaming Naked, industrial rock, Cube of Shame, rock band, musicians, artists, music, Marilyn Manson, Slipknot, Rammstein, Denmark">
     <title>Screaming Naked</title>
     <link rel="stylesheet" href="reboot.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <img src="images/sn-logo.png" alt="">
+    <header class="header">
+        <a href="http://screamingnaked.dk/">
+            <img class="header__img" src="images/sn-logo.png" alt="Logo of the Screaming Naked that leads to the home page">
+        </a>
     </header>
 
     <section>
-        <div>
-            <video autoplay muted loop>
-            <source src="video/video-cut.mp4" type="video/mp4" />
+        <div class="video__div">
+            <video class="video__bg" autoplay muted loop>
+                <source src="video/video-cut.mp4" type="video/mp4" />
             </video>
         </div>
 
-        <div>
-            <img src="images/sn-cover.png" alt="">
+        <div class="cover">
+            <img class="cover__img" src="images/sn-cover.png" alt="Single Cover for a song Cube of Shame by Screaming Naked" data-tilt data-tilt-max="25">
         </div>
 
         <div>
-            <button>Get it now</button>
+            <button class="btn">Get it now</button>
         </div>
 
     </section>
 
-    <section>
-        <h2>Cube of Shame</h2>
-        
-        <div>
-            <button>Stream now</button>
+    <section class="video__section">
+        <div><h2>Cube of Shame</h2>
+            <button class="btn btn-action">Stream now</button>
         </div>
 
-        <video controls>
-            <source src="video/video-2-cut.mp4" type="video/mp4" />
+        <video controls class="video__bg-whole">
+            <source src="video/video-2-cut.mp4" type="video/mp4"/>
         </video>
 
     </section>
 
-    <section>
+    <section class="video__section some__section">
         <h2>Stay updated</h2>
-        <div>
-            <a href="https://www.facebook.com/Srrrinak/"><img src="images/face.png" alt=""></a>
-            <a href="https://www.instagram.com/screaming.naked/"><img src="images/insta.png" alt=""></a>
-            <a href="https://www.youtube.com/channel/UCJBM9heI6hNPajojVn04TBA/featured"><img src="images/youtube.png" alt=""></a>
+        <div class="some__div">
+            <a href="https://www.facebook.com/Srrrinak/"><img class="icon" src="images/face.png" alt=""></a>
+            <a href="https://www.instagram.com/screaming.naked/"><img class="icon" src="images/insta.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCJBM9heI6hNPajojVn04TBA/featured"><img class="icon" src="images/youtube.png"
+                    alt=""></a>
         </div>
 
     </section>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 </body>
+
 </html>

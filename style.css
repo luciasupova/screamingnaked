@@ -1,0 +1,139 @@
+@import url("https://use.typekit.net/owe2mcd.css");
+
+body {
+    font-family: Industry;
+}
+
+:root {
+    --main-color: rgb(17, 17, 17);
+    --secondary-color: rgb(65, 11, 11);
+    --tertiary-color: rgb(241, 241, 241);
+    --fourth-color: rgb(78, 207, 18);
+
+}
+
+/* HEADER */
+.header {
+    background: transparent;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+.header__img {
+    width: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* BACKGROUND VIDEO */
+.video__div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video__div video {
+    min-width: 100%;
+    min-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* SINGLE COVER */
+.cover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 12em;
+    padding-bottom: 8em;
+}
+
+.cover__img {
+    width: 450px;
+}
+
+
+/* OFFICIAL VIDEO */
+.video__bg-whole {
+    width: 500px;
+}
+
+/* BUTTONS */
+.btn {
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.3em;
+    width: 200px;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    border: none;
+    margin-bottom: 2em;
+}
+
+.btn-action {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    font-size: 23px;
+
+}
+
+.btn:hover {
+    background-color: var(--fourth-color);
+}
+
+/* OFFICIAL VIDEO */
+
+.video__section {
+    background-color: var(--main-color);
+    padding-top: 8em;
+    padding-bottom: 5em;
+}
+
+h2 {
+    position: relative;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2em;
+    font-size: 33px;
+}
+
+.video__bg-whole {
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+/* SOME ICONS */
+
+.some__section {
+    padding-top: 0em;
+    padding-bottom: 4em;
+}
+
+.some__div {
+display: flex;
+justify-content: center;
+}
+
+.icon {
+    width: 60px;
+margin-left: 1em;
+margin-right: 1em;
+}

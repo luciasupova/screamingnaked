@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/owe2mcd.css");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
     font-family: Industry;
@@ -18,14 +19,28 @@ body {
     width: 100%;
     z-index: 1;
     position: absolute;
+    
 }
+
+/*maybe*
+.header__name {
+    color: var(--fourth-color);
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: 'VT323', monospace;
+    margin-top: -0.5em;
+    margin-left: 29.5em;
+}
+*/
 
 .header__img {
     width: 105px;
-    margin-left: auto;
+    cursor: pointer;
+margin-left: auto;
     margin-right: auto;
     display: block;
-    cursor: pointer;
+    /*maybe if i need the other one
+    margin-left: 52em; */
 }
 
 /* BACKGROUND VIDEO */
@@ -55,13 +70,14 @@ body {
 .cover {
     position: relative;
     display: flex;
+    margin-top: 1em;
     justify-content: center;
-    padding-top: 12em;
     padding-bottom: 8em;
 }
 
 .cover__img {
     border: outset white 0.2em;
+    margin-top: 3.5em;
 }
 
 h3 {

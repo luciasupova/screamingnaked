@@ -1,5 +1,4 @@
 @import url("https://use.typekit.net/owe2mcd.css");
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
     font-family: Industry;
@@ -21,15 +20,17 @@ body {
     width: 100%;
     z-index: 1;
     top: 0;
-    
+
 }
 
-.black { background-color: #0c0c0c}
+.black {
+    background-color: #0c0c0c
+}
 
 .header__img {
     width: 105px;
     cursor: pointer;
-margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     display: block;
 }
@@ -74,14 +75,14 @@ margin-left: auto;
 .cover__img {
     border: outset white 0.2em;
     margin-top: 12em;
-    width: 400px;
+    width: 350px;
 }
 
 h3 {
     position: absolute;
     color: var(--tertiary-color);
     text-transform: uppercase;
-    margin-top: 13em;
+    margin-top: 12em;
     padding: 1.5em;
     font-size: 32px;
     animation: glitch1 2.5s infinite;
@@ -304,18 +305,18 @@ h4 {
     position: absolute;
     color: var(--tertiary-color);
     text-transform: uppercase;
-    margin-top: 22em;
+    margin-top: 21em;
     padding: 1em;
     font-weight: lighter;
     font-size: 22px;
 }
 
-/* What the hell am i doing here */
+/* bandcamp widget */
 iframe {
     position: absolute;
-    bottom: 0;   
-    border: 0; 
-    width: 80%; 
+    bottom: 0;
+    border: 0;
+    width: 11%;
     height: 42px;
 }
 
@@ -324,7 +325,7 @@ iframe {
 .btn {
     position: relative;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 0.3em;
@@ -342,66 +343,70 @@ iframe {
 }
 
 /* LINK */
-a:hover { 
-    text-decoration: none; 
+a:hover {
+    text-decoration: none;
 }
 
 
-a:active { 
-    text-decoration: none; 
+a:active {
+    text-decoration: none;
 }
 
 /* ARROW */
 .arrow,
 .arrow:before {
-  position: absolute;
-  left: 46%;
+    position: absolute;
+    left: 46%;
 }
 
 .arrow {
-  width: 40px;
-  height: 40px;
-  bottom: 5%;
-  transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
+    width: 40px;
+    height: 40px;
+    bottom: 5%;
+    transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
 }
-  
+
 .arrow:before {
-  content: '';
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px #fff solid;
-  border-bottom: 1px #fff solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
 }
 
 @keyframes arrow {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-10px, -10px);
-  }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -10px);
+    }
 }
 
 /* Scroll down */
 
-p {
-    position: relative;
+.scroll {
     color: var(--tertiary-color);
     display: flex;
     justify-content: center;
     text-transform: uppercase;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
 
 }
 
@@ -410,7 +415,7 @@ p {
 .video__section {
     background-color: var(--main-color);
     background-image: url(images/bg.png);
-    padding-top: 7em;
+    padding-top: 16em;
     padding-bottom: 5em;
 }
 
@@ -420,24 +425,15 @@ p {
     text-transform: uppercase;
     text-align: center;
     padding: 3em;
-    font-size: 33px;
+    font-size: 23px;
 }
 
 .video__bg-whole {
-    width: 400px;
+    width: 320px;
     display: block;
     margin: auto;
 }
 
-
-.text__glitch-header  {
-    position: absolute;
-    color: var(--tertiary-color);
-    text-transform: uppercase;
-    padding: 3em;
-    font-size: 33px;
-    animation: glitch1 2.5s infinite;
-}
 /* SOME ICONS */
 
 .some__section {
@@ -448,20 +444,30 @@ p {
     justify-content: center;
 }
 
+.text__glitch-header {
+    position: absolute;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+    padding: 3em;
+    font-size: 28px;
+    animation: glitch1 2.5s infinite;
+}
+
+
 .icon {
     width: 60px;
     margin-left: 1em;
     margin-right: 1em;
-    padding-top: 19em;
+    padding-top: 25em;
     transition: transform .2s;
 }
 
 .icon:hover {
-    transform: scale(1.1); 
-  }
+    transform: scale(1.1);
+}
 
 
-  /* EMAIL */
+/* EMAIL */
 .form {
     position: absolute;
     margin-top: 12em;
@@ -469,8 +475,13 @@ p {
     justify-content: center;
 }
 
- #email {
-    width: 300px;
+.form-submit {
+    margin-top: 18em;
+}
+
+
+#email {
+    width: 270px;
     height: 50px;
 }
 
@@ -478,20 +489,77 @@ p {
 footer {
     height: 60px;
     width: 100%;
-    background-color: var(--main-color);   
+    background-color: var(--main-color);
 }
 
 .p__footer {
-text-align: center; 
-padding-top: 1.7em;
-font-size: 12px;
+    text-align: center;
+    padding-top: 1.7em;
+    font-size: 12px;
+    color: var(--tertiary-color);
 }
 
-@media only screen and (min-width:1279px) {
-/* COVER */
+/*TABLET*/
+@media only screen and (min-width:766px) {
+
+    /*COVER*/
+    .cover__img {
+        width: 550px;
+        margin-top: 14em;
+    }
+
+    h3 {
+        margin-top: 13em;
+        font-size: 40px;
+    }
+
+    h4 {
+        margin-top: 24em;
+        font-size: 25px;
+    }
+
+    /* bandcamp widget */
+    iframe {
+        position: absolute;
+        bottom: 0;
+        border: 0;
+        width: 28%;
+        height: 42px;
+    }
+
+    /* VIDEO OFFICIAl */
+    .video__section {
+        padding-top: 22em;
+    }
+
+    .text__caption {
+        padding: 3em;
+        font-size: 30px;
+    }
+
+    .video__bg-whole {
+        width: 550px;
+        display: block;
+    }
+
+    /*SOME*/
+    .some__section {
+        margin-top: -18em;
+        padding-bottom: 3.5em;
+        background-image: url(images/bg-2.png);
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*LAPTOP*/
+@media only screen and (min-width:1270px) {
+
+    /* COVER */
     .cover__img {
         width: 580px;
         margin-top: 3.5em;
+        margin-left: -10em;
     }
 
     .cover {
@@ -501,21 +569,38 @@ font-size: 12px;
     }
 
     h3 {
-        margin-top: -0.5em;
+        margin-top: 0.5em;
         margin-left: 7em;
-        font-size: 75px;
+        font-size: 55px;
     }
 
     h4 {
-        margin-left: 20.5em;
+        margin-left: 14.8em;
         margin-top: 5em;
-        font-weight: bold;
         font-size: 30px;
+    }
+
+    /* bandcamp widget */
+    iframe {
+        position: absolute;
+        bottom: 0;
+        border: 0;
+        width: 80%;
+        height: 42px;
     }
 
     /* OFFICIAL VIDEO */
     .video__bg-whole {
         width: 950px;
+    }
+
+    .text__caption {
+        font-size: 38px;
+        padding-bottom: 3.5em;
+    }
+
+    .video__section {
+        padding-top: 11em;
     }
 
     /* Buttons */
@@ -524,17 +609,89 @@ font-size: 12px;
         padding: 0.4em;
         width: 250px;
         margin-bottom: 9em;
-        margin-left: 31.1em;
-        margin-top: -9.5em;
+        margin-left: 25.3em;
+        margin-top: -9em;
     }
- 
+
     /* ARROW */
     .arrow,
-.arrow:before {
-  left: 49%;
+    .arrow:before {
+        left: 49%;
+    }
+
+    /*widget*/
+    iframe {
+        width: 20%;
+    }
+
+        /*SOME*/
+        .some__section {
+            padding-top: 15em;
+        }
+
+        .text__glitch-header {
+            font-size: 57px;
+        }
+        .icon {
+            width: 60px;
+            margin-left: 1em;
+            margin-right: 1em;
+            padding-top: 30em;
+            transition: transform .2s;
+        }
+
+        /* EMAIL */
+.form {
+    margin-top: 19em;
+    display: flex;
+    justify-content: center;
 }
 
-iframe {
-    width: 20%; 
+.form-submit {
+    margin-top: 23.5em;
 }
+
+#email {
+    width: 330px;
+}
+
+}
+
+/* DESKTOP */
+@media only screen and (min-width:1919px) {
+        /* COVER */
+        .cover__img {
+            width: 580px;
+            margin-top: 3.5em;
+            margin-left: 0em;
+        }
+
+        h3 {
+            margin-top: -0.5em;
+            font-size: 75px;
+        }
+
+        h4 {
+            margin-left: 20.5em;
+        }
+
+        /* BUTTON */
+        .btn-laptop {
+            margin-left: 31.1em;
+            margin-top: -8.5em;
+        }
+
+        /* VIDEO */
+        .text__caption {
+            padding-bottom: 3em;
+        }
+    
+        .video__section {
+            padding-top: 8em;
+        }
+
+            /*SOME*/
+    .some__section {
+        padding-top: 17em;
+    }
 }

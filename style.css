@@ -624,73 +624,75 @@ footer {
         width: 20%;
     }
 
-        /*SOME*/
-        .some__section {
-            padding-top: 15em;
-        }
+    /*SOME*/
+    .some__section {
+        padding-top: 15em;
+    }
 
-        .text__glitch-header {
-            font-size: 57px;
-        }
-        .icon {
-            width: 60px;
-            margin-left: 1em;
-            margin-right: 1em;
-            padding-top: 30em;
-            transition: transform .2s;
-        }
+    .text__glitch-header {
+        font-size: 57px;
+    }
 
-        /* EMAIL */
-.form {
-    margin-top: 19em;
-    display: flex;
-    justify-content: center;
-}
+    .icon {
+        width: 60px;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-top: 30em;
+        transition: transform .2s;
+    }
 
-.form-submit {
-    margin-top: 23.5em;
-}
+    /* EMAIL */
+    .form {
+        margin-top: 19em;
+        display: flex;
+        justify-content: center;
+    }
 
-#email {
-    width: 330px;
-}
+    .form-submit {
+        margin-top: 23.5em;
+    }
+
+    #email {
+        width: 330px;
+    }
 
 }
 
 /* DESKTOP */
 @media only screen and (min-width:1919px) {
-        /* COVER */
-        .cover__img {
-            width: 580px;
-            margin-top: 3.5em;
-            margin-left: 0em;
-        }
 
-        h3 {
-            margin-top: -0.5em;
-            font-size: 75px;
-        }
+    /* COVER */
+    .cover__img {
+        width: 580px;
+        margin-top: 3.5em;
+        margin-left: 0em;
+    }
 
-        h4 {
-            margin-left: 20.5em;
-        }
+    h3 {
+        margin-top: -0.5em;
+        font-size: 75px;
+    }
 
-        /* BUTTON */
-        .btn-laptop {
-            margin-left: 31.1em;
-            margin-top: -8.5em;
-        }
+    h4 {
+        margin-left: 20.5em;
+    }
 
-        /* VIDEO */
-        .text__caption {
-            padding-bottom: 3em;
-        }
-    
-        .video__section {
-            padding-top: 8em;
-        }
+    /* BUTTON */
+    .btn-laptop {
+        margin-left: 31.1em;
+        margin-top: -8.5em;
+    }
 
-            /*SOME*/
+    /* VIDEO */
+    .text__caption {
+        padding-bottom: 3em;
+    }
+
+    .video__section {
+        padding-top: 8em;
+    }
+
+    /*SOME*/
     .some__section {
         padding-top: 17em;
     }

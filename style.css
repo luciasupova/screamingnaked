@@ -14,25 +14,17 @@ body {
 }
 
 /* HEADER */
-header {
-    background: transparent;
+.header {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    overflow: hidden;
     width: 100%;
     z-index: 1;
-    position: absolute;
     top: 0;
     
 }
 
-/*maybe*
-.header__name {
-    color: var(--fourth-color);
-    text-transform: uppercase;
-    font-size: 32px;
-    font-family: 'VT323', monospace;
-    margin-top: -0.5em;
-    margin-left: 29.5em;
-}
-*/
+.black { background-color: #0c0c0c}
 
 .header__img {
     width: 105px;
@@ -40,10 +32,9 @@ header {
 margin-left: auto;
     margin-right: auto;
     display: block;
-    /*maybe if i need the other one
-    margin-left: 52em; */
 }
 
+/*will delete maybe
 .header__img:hover {
     border: solid var(--fourth-color);
 }
@@ -96,12 +87,12 @@ h3 {
     animation: glitch1 2.5s infinite;
 }
 
-h3:nth-child(2) {
+#glitch:nth-child(2) {
     color: #67f3da;
     animation: glitch2 2.5s infinite;
 }
 
-h3:nth-child(3) {
+#glitch:nth-child(3) {
     color: #f16f6f;
     animation: glitch3 2.5s infinite;
 }
@@ -342,16 +333,8 @@ iframe {
     margin: auto;
     display: block;
     border: none;
-    margin-bottom: 2em;
-    margin-top: 1em;
     background-color: var(--fourth-color);
     color: var(--tertiary-color);
-}
-
-.btn-action {
-    background-color: var(--secondary-color);
-    font-size: 23px;
-
 }
 
 .btn:hover {
@@ -426,11 +409,12 @@ p {
 
 .video__section {
     background-color: var(--main-color);
+    background-image: url(images/bg.png);
     padding-top: 7em;
     padding-bottom: 5em;
 }
 
-h2 {
+.text__caption {
     position: relative;
     color: var(--tertiary-color);
     text-transform: uppercase;
@@ -445,14 +429,21 @@ h2 {
     margin: auto;
 }
 
+
+.text__glitch-header  {
+    position: absolute;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+    padding: 3em;
+    font-size: 33px;
+    animation: glitch1 2.5s infinite;
+}
 /* SOME ICONS */
 
 .some__section {
     padding-top: 0em;
-    padding-bottom: 4em;
-}
-
-.some__div {
+    padding-bottom: 3.5em;
+    background-image: url(images/bg-2.png);
     display: flex;
     justify-content: center;
 }
@@ -461,18 +452,39 @@ h2 {
     width: 60px;
     margin-left: 1em;
     margin-right: 1em;
+    padding-top: 19em;
+    transition: transform .2s;
+}
+
+.icon:hover {
+    transform: scale(1.1); 
+  }
+
+
+  /* EMAIL */
+.form {
+    position: absolute;
+    margin-top: 12em;
+    display: flex;
+    justify-content: center;
+}
+
+ #email {
+    width: 300px;
+    height: 50px;
 }
 
 /* FOOTER */
 footer {
-    height: 80px;
+    height: 60px;
     width: 100%;
-    background-color: var(--fourth-color);   
+    background-color: var(--main-color);   
 }
 
 .p__footer {
 text-align: center; 
 padding-top: 1.7em;
+font-size: 12px;
 }
 
 @media only screen and (min-width:1279px) {

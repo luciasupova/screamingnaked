@@ -37,10 +37,9 @@
             <h3>Cube of Shame</h3>
             <h4>Out Now</h4>
 
-            <img class="cover__img" id="myImg" src="images/giphy.gif" onclick="myFunction()"
-                alt="Single Cover for a song Cube of Shame by Screaming Naked" data-tilt data-tilt-max="25">
-                
-
+            <img class="cover__img" id="coverChange" onmouseover="mouseOverImage()" onmouseout="mouseOutImage()"
+                src="images/none.gif" alt="Single Cover for a song Cube of Shame by Screaming Naked" 
+                data-tilt data-tilt-max="25">
         </div>
 
         <button class="btn btn-laptop">Get it now</button>
@@ -70,10 +69,10 @@
 
     </section>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-     <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,7 @@
-  function myFunction() {
-    var image = document.getElementById("myImg");
-    if (image.src.match("sn-cover")) {
-        image.src = "images/giphy.gif";
-    } else {
-        image.src = "images/sn-cover.png";
-    }
+function mouseOverImage() {
+    document.getElementById('coverChange').src = "images/cube-broken.gif";
 }
 
+function mouseOutImage() {
+    document.getElementById('coverChange').src = "images/none.gif";
+}

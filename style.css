@@ -568,7 +568,7 @@ a:active {
     justify-content: center;
 }
 
-.form-submit {
+#form-submit {
     margin-top: 18em;
 }
 
@@ -756,7 +756,7 @@ height: 55%;
         justify-content: center;
     }
 
-    .form-submit {
+    #form-submit {
         margin-top: 23.8em;
     }
 

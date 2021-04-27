@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     font-family: Industry;
@@ -19,7 +19,7 @@ body {
 /* HEADER */
 .header {
     background: transparent;
-    position: fixed;
+    position: absolute;
     overflow: hidden;
     width: 100%;
     z-index: 1;
@@ -37,11 +37,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
-
-/*will delete maybe
-.header__img:hover {
-    border: solid var(--fourth-color);
 }
 
 /* BACKGROUND VIDEO */
@@ -341,6 +336,8 @@ iframe {
     background-color: var(--fourth-color);
     color: var(--tertiary-color);
     margin-top: -1em;
+    transition: all 0.3s ease-out;
+
 }
 
 .btn:hover {
@@ -350,11 +347,13 @@ iframe {
 /* LINK */
 a:hover {
     text-decoration: none;
+    color: var(--tertiary-color);
 }
 
 
 a:active {
     text-decoration: none;
+    color: var(--tertiary-color);
 }
 
 /* ARROW */
@@ -439,6 +438,92 @@ a:active {
     margin: auto;
 }
 
+.box {
+    width: 60%;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 65px/400px;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 8px;
+  }
+  
+  .btn-change {
+    font-size: 1em;
+    margin-top: 2em;
+    padding: 10px;
+    font-size: 10px;
+    width: 100px;
+    border: 2px solid var(--fourth-color);
+    background: var(--main-color);
+  }
+
+  .btn-change:hover {
+      background: var(--fourth-color);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+      margin: auto;
+      margin-top: 8em;
+    padding: 20px;
+    background: var(--tertiary-color);
+    border-radius: 5px;
+    width: 80%;
+    height: 40%;
+    position: relative;
+    transition: all 1s ease-in-out;
+  }
+  .video-popup {
+      width: 100%;
+      height: 100%;
+}
+  
+  .popup h2 {
+    margin-top: 0;
+    color: var(--main-color);
+    font-size: 15px;
+  }
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--main-color);
+  }
+  .popup .close:hover {
+    color: var(--fourth-color);
+  }
+  .popup .content {
+    max-height: 100%;
+    overflow: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+
+
+  
 /* SOME ICONS */
 
 .some__section {
@@ -456,6 +541,9 @@ a:active {
     padding: 3em;
     font-size: 28px;
     animation: glitch1 2.5s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -601,7 +689,7 @@ footer {
 
     /* OFFICIAL VIDEO */
     .video__bg-whole {
-        width: 950px;
+        width: 700px;
     }
 
     .text__caption {
@@ -634,13 +722,23 @@ footer {
         width: 20%;
     }
 
+    /*pop up*/
+    .popup {
+width: 40%;
+height: 55%;
+    }
+
+    .text__caption {
+        font-size: 25px;
+    }
+
     /*SOME*/
     .some__section {
         padding-top: 15em;
     }
 
     .text__glitch-header {
-        font-size: 57px;
+        font-size: 48px;
     }
 
     .icon {
@@ -653,13 +751,13 @@ footer {
 
     /* EMAIL */
     .form {
-        margin-top: 19em;
+        margin-top: 18em;
         display: flex;
         justify-content: center;
     }
 
     .form-submit {
-        margin-top: 23.5em;
+        margin-top: 23.8em;
     }
 
     #email {
@@ -673,6 +771,10 @@ footer {
 /* DESKTOP */
 @media only screen and (min-width:1919px) {
 
+    .header__img {
+        width: 130px;
+    }
+
     /* COVER */
     .cover__img {
         width: 580px;
@@ -682,7 +784,7 @@ footer {
 
     .cover {
         margin-left: 18em;
-        padding-top: 15em;
+        padding-top: 13em;
     }
 
     h3 {
@@ -706,9 +808,13 @@ footer {
         margin-top: -8.5em;
     }
 
-
     /* VIDEO */
+    .video__bg-whole {
+        width: 855px;
+    }
+
     .text__caption {
+        font-size: 39px;
         padding-bottom: 3em;
     }
 
@@ -716,6 +822,11 @@ footer {
         padding-top: 8em;
     }
 
+    /*pop up*/
+    .popup {
+        width: 45%;
+        height: 58%;
+            }
     /*SOME*/
     .some__section {
         padding-top: 17em;

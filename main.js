@@ -7,7 +7,7 @@ function mouseOutImage() {
     document.getElementById('coverChange').src = "images/none.gif";
 }
 
-/* change header */
+/* change header
 $(function() {
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 200) {
@@ -17,3 +17,4 @@ $(function() {
         }
     });
 });
+*/

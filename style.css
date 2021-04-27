@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/owe2mcd.css");
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: Industry;
 }
@@ -14,7 +18,7 @@ body {
 
 /* HEADER */
 .header {
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
     position: fixed;
     overflow: hidden;
     width: 100%;
@@ -24,11 +28,11 @@ body {
 }
 
 .black {
-    background-color: #0c0c0c
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 .header__img {
-    width: 105px;
+    width: 125px;
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
@@ -366,8 +370,8 @@ a:active {
     transform: rotate(45deg);
     border-left: none;
     border-top: none;
-    border-right: 2px #fff solid;
-    border-bottom: 2px #fff solid;
+    border-right: 2px var(--tertiary-color) solid;
+    border-bottom: 2px var(--tertiary-color) solid;
 }
 
 .arrow:before {
@@ -378,8 +382,8 @@ a:active {
     margin: -10px 0 0 -10px;
     border-left: none;
     border-top: none;
-    border-right: 1px #fff solid;
-    border-bottom: 1px #fff solid;
+    border-right: 1px var(--tertiary-color) solid;
+    border-bottom: 1px var(--tertiary-color) solid;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-name: arrow;
@@ -399,7 +403,7 @@ a:active {
 /* Scroll down */
 
 .scroll {
-    color: var(--tertiary-color);
+    color: var(--fourth-color);
     display: flex;
     justify-content: center;
     text-transform: uppercase;
@@ -479,6 +483,11 @@ a:active {
     margin-top: 18em;
 }
 
+/* maybe we'll add this
+input {
+    font-weight: bold;
+}
+*/
 
 #email {
     width: 270px;
@@ -504,17 +513,17 @@ footer {
 
     /*COVER*/
     .cover__img {
-        width: 550px;
-        margin-top: 14em;
+        width: 480px;
+        margin-top: 12.5em;
     }
 
     h3 {
-        margin-top: 13em;
+        margin-top: 11em;
         font-size: 40px;
     }
 
     h4 {
-        margin-top: 24em;
+        margin-top: 21em;
         font-size: 25px;
     }
 
@@ -557,27 +566,27 @@ footer {
 
     /* COVER */
     .cover__img {
-        width: 580px;
-        margin-top: 3.5em;
-        margin-left: -10em;
+        width: 450px;
+        margin-top: 3em;
+        margin-left: -2em;
     }
 
     .cover {
         margin-left: 18em;
-        padding-top: 15em;
+        padding-top: 9em;
         display: block;
     }
 
     h3 {
-        margin-top: 0.5em;
+        margin-top: 0.1em;
         margin-left: 7em;
         font-size: 55px;
     }
 
     h4 {
-        margin-left: 14.8em;
-        margin-top: 5em;
-        font-size: 30px;
+        margin-left: 19.5em;
+        margin-top: 6em;
+        font-size: 23px;
     }
 
     /* bandcamp widget */
@@ -605,11 +614,11 @@ footer {
 
     /* Buttons */
     .btn-laptop {
-        font-size: 30px;
+        font-size: 23px;
         padding: 0.4em;
-        width: 250px;
+        width: 210px;
         margin-bottom: 9em;
-        margin-left: 25.3em;
+        margin-left: 33em;
         margin-top: -9em;
     }
 
@@ -654,6 +663,8 @@ footer {
 
     #email {
         width: 330px;
+        text-transform: uppercase;
+        font-weight: bold;
     }
 
 }
@@ -668,20 +679,32 @@ footer {
         margin-left: 0em;
     }
 
+    .cover {
+        margin-left: 18em;
+        padding-top: 15em;
+    }
+
     h3 {
         margin-top: -0.5em;
+        margin-left: 7em;
         font-size: 75px;
     }
 
     h4 {
         margin-left: 20.5em;
+        margin-top: 5em;
+        font-size: 30px;
     }
+
 
     /* BUTTON */
     .btn-laptop {
+        font-size: 30px;
+        width: 250px;
         margin-left: 31.1em;
         margin-top: -8.5em;
     }
+
 
     /* VIDEO */
     .text__caption {

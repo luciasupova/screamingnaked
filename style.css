@@ -351,8 +351,7 @@ iframe {
     padding: 10px;
     font-size: 11px;
     width: 100px;
-    border: 2px solid var(--fourth-color);
-    background: var(--main-color);
+    background: var(--secondary-color);
 }
 
 .btn-change:hover {

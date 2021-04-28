@@ -77,6 +77,7 @@ body {
     width: 330px;
 }
 
+/* COVER TEXT */
 h3 {
     position: absolute;
     color: var(--tertiary-color);
@@ -310,7 +311,7 @@ h4 {
     font-size: 22px;
 }
 
-/* bandcamp widget */
+/* BANDCAMP WIDGET */
 iframe {
     position: absolute;
     bottom: 0;
@@ -344,6 +345,20 @@ iframe {
     background-color: var(--secondary-color);
 }
 
+.btn-change {
+    font-size: 1em;
+    margin-top: 2em;
+    padding: 10px;
+    font-size: 11px;
+    width: 100px;
+    border: 2px solid var(--fourth-color);
+    background: var(--main-color);
+}
+
+.btn-change:hover {
+    background: var(--fourth-color);
+}
+
 /* LINK */
 a:hover {
     text-decoration: none;
@@ -357,13 +372,13 @@ a:active {
 }
 
 /* ARROW */
-.arrow,
-.arrow:before {
+.scroll-down__arrow,
+.scroll-down__arrow:before {
     position: absolute;
     left: 46%;
 }
 
-.arrow {
+.scroll-down__arrow {
     width: 40px;
     height: 40px;
     bottom: 5%;
@@ -374,7 +389,7 @@ a:active {
     border-bottom: 2px var(--tertiary-color) solid;
 }
 
-.arrow:before {
+.scroll-down__arrow:before {
     content: '';
     width: 20px;
     height: 20px;
@@ -400,9 +415,9 @@ a:active {
     }
 }
 
-/* Scroll down */
+/* SCROLL DOWN */
 
-.scroll {
+.scroll-down__text {
     color: var(--fourth-color);
     display: flex;
     justify-content: center;
@@ -419,11 +434,11 @@ a:active {
 .video__section {
     background-color: var(--main-color);
     background-image: url(images/bg.png);
-    padding-top: 16em;
-    padding-bottom: 5em;
+    padding-top: 12em;
+    padding-bottom: 2em;
 }
 
-.text__caption {
+.video__text-caption {
     position: relative;
     color: var(--tertiary-color);
     text-transform: uppercase;
@@ -432,13 +447,14 @@ a:active {
     font-size: 23px;
 }
 
-.video__bg-whole {
+.video__official {
     width: 320px;
     display: block;
     margin: auto;
 }
 
-.box {
+/* BTS VIDEO */
+.surprise {
     width: 60%;
     margin: 0 auto;
     padding: 35px;
@@ -447,23 +463,14 @@ a:active {
     text-transform: uppercase;
     text-align: center;
     font-size: 8px;
-  }
-  
-  .btn-change {
-    font-size: 1em;
-    margin-top: 2em;
-    padding: 10px;
-    font-size: 10px;
-    width: 100px;
-    border: 2px solid var(--fourth-color);
-    background: var(--main-color);
-  }
+}
 
-  .btn-change:hover {
-      background: var(--fourth-color);
-  }
-  
-  .overlay {
+.surprise__text {
+    font-size: 12px;
+}
+
+/* POP UP */
+.bts__overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -473,15 +480,17 @@ a:active {
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-  }
-  .overlay:target {
+    z-index: 999;
+}
+
+.bts__overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  
-  .popup {
-      margin: auto;
-      margin-top: 8em;
+}
+
+.bts__popup {
+    margin: auto;
+    margin-top: 8em;
     padding: 20px;
     background: var(--tertiary-color);
     border-radius: 5px;
@@ -489,18 +498,20 @@ a:active {
     height: 40%;
     position: relative;
     transition: all 1s ease-in-out;
-  }
-  .video-popup {
-      width: 100%;
-      height: 100%;
 }
-  
-  .popup h2 {
+
+.bts__video {
+    width: 100%;
+    height: 100%;
+}
+
+.bts__popup h2 {
     margin-top: 0;
     color: var(--main-color);
     font-size: 15px;
-  }
-  .popup .close {
+}
+
+.bts__popup .bts__close {
     position: absolute;
     top: 10px;
     right: 20px;
@@ -509,24 +520,23 @@ a:active {
     font-weight: bold;
     text-decoration: none;
     color: var(--main-color);
-  }
-  .popup .close:hover {
+}
+
+.bts__popup .bts__close:hover {
     color: var(--fourth-color);
-  }
-  .popup .content {
+}
+
+.bts__popup .bts__content {
     max-height: 100%;
     overflow: auto;
     justify-content: center;
     display: flex;
     align-items: center;
-  }
-  
+}
 
+/* SOME SECTION */
 
-  
-/* SOME ICONS */
-
-.some__section {
+.some {
     padding-top: 0em;
     padding-bottom: 3.5em;
     background-image: url(images/bg-2.png);
@@ -534,7 +544,7 @@ a:active {
     justify-content: center;
 }
 
-.text__glitch-header {
+.some__text {
     position: absolute;
     color: var(--tertiary-color);
     text-transform: uppercase;
@@ -547,21 +557,21 @@ a:active {
 }
 
 
-.icon {
-    width: 60px;
+.some__icon {
+    width: 50px;
     margin-left: 1em;
     margin-right: 1em;
     padding-top: 25em;
     transition: transform .2s;
 }
 
-.icon:hover {
+.some__icon:hover {
     transform: scale(1.1);
 }
 
 
 /* EMAIL */
-.form {
+.some__form {
     position: absolute;
     margin-top: 12em;
     display: flex;
@@ -571,12 +581,6 @@ a:active {
 #form-submit {
     margin-top: 18em;
 }
-
-/* maybe we'll add this
-input {
-    font-weight: bold;
-}
-*/
 
 #email {
     width: 270px;
@@ -616,7 +620,7 @@ footer {
         font-size: 25px;
     }
 
-    /* bandcamp widget */
+    /* BANDCAMP WIDGET */
     iframe {
         position: absolute;
         bottom: 0;
@@ -625,23 +629,23 @@ footer {
         height: 42px;
     }
 
-    /* VIDEO OFFICIAl */
+    /* VIDEO OFFICIAL */
     .video__section {
         padding-top: 22em;
     }
 
-    .text__caption {
+    .video__text-caption {
         padding: 3em;
         font-size: 30px;
     }
 
-    .video__bg-whole {
+    .video__official {
         width: 550px;
         display: block;
     }
 
     /*SOME*/
-    .some__section {
+    .some {
         margin-top: -18em;
         padding-bottom: 3.5em;
         background-image: url(images/bg-2.png);
@@ -678,7 +682,7 @@ footer {
         font-size: 22px;
     }
 
-    /* bandcamp widget */
+    /* BANDCAMP WIDGET */
     iframe {
         position: absolute;
         bottom: 0;
@@ -688,11 +692,11 @@ footer {
     }
 
     /* OFFICIAL VIDEO */
-    .video__bg-whole {
+    .video__official {
         width: 700px;
     }
 
-    .text__caption {
+    .video__text-caption {
         font-size: 38px;
         padding-bottom: 3.5em;
     }
@@ -701,7 +705,7 @@ footer {
         padding-top: 11em;
     }
 
-    /* Buttons */
+    /* BUTTONS */
     .btn-laptop {
         font-size: 23px;
         padding: 0.4em;
@@ -712,45 +716,51 @@ footer {
     }
 
     /* ARROW */
-    .arrow,
-    .arrow:before {
+    .scroll-down__arrow,
+    .scroll-down__arrow:before {
         left: 49%;
     }
 
-    /*widget*/
+    /* WIDGET */
     iframe {
         width: 20%;
     }
 
-    /*pop up*/
-    .popup {
-width: 40%;
-height: 55%;
+    /*BTS POP UP*/
+    .bts__popup {
+        width: 40%;
+        height: 55%;
     }
 
-    .text__caption {
+    .video__text-caption {
         font-size: 25px;
     }
 
+    .surprise__text {
+        font-size: 16px;
+    }
+
+    .btn-change {
+        font-size: 12px;
+        width: 130px;
+    }
+
     /*SOME*/
-    .some__section {
+    .some {
         padding-top: 15em;
     }
 
-    .text__glitch-header {
+    .some__text {
         font-size: 48px;
     }
 
-    .icon {
+    .some__icon {
         width: 60px;
-        margin-left: 1em;
-        margin-right: 1em;
         padding-top: 30em;
-        transition: transform .2s;
     }
 
     /* EMAIL */
-    .form {
+    .some__form {
         margin-top: 18em;
         display: flex;
         justify-content: center;
@@ -809,11 +819,11 @@ height: 55%;
     }
 
     /* VIDEO */
-    .video__bg-whole {
+    .video__official {
         width: 855px;
     }
 
-    .text__caption {
+    .video__text-caption {
         font-size: 39px;
         padding-bottom: 3em;
     }
@@ -822,13 +832,14 @@ height: 55%;
         padding-top: 8em;
     }
 
-    /*pop up*/
-    .popup {
+    /* POP UP */
+    .bts__popup {
         width: 45%;
         height: 58%;
-            }
-    /*SOME*/
-    .some__section {
+    }
+
+    /* SOME */
+    .some {
         padding-top: 17em;
     }
 }

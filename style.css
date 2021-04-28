@@ -601,6 +601,32 @@ footer {
     color: var(--tertiary-color);
 }
 
+/* OFFICIAL PAGE */
+img.bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .div-cover__icon {
+    position: absolute; 
+    top: 0;
+    margin-top: 36em;
+    margin-left: 47em;
+  }
+
+  .div-cover__img {
+      width: 105px;
+  }
+  
+  .div-cover__img:hover {
+    outline: lime solid 3px;
+}
+
+  
+
 /*TABLET*/
 @media only screen and (min-width:766px) {
 
